@@ -5,6 +5,7 @@
     "rand-token": "^0.2.1"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
     "mocha": "^2.4.5"
   }
 }
