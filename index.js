@@ -10,31 +10,31 @@ import { RandStream, asyncOp } from './lib/lib'
  *
  */
 
-// function doAsync(input) {
-//     input.map(x => {
-//         if(Array.isArray(x))
-//             x.map(y => asyncOp(y))
-//         else
-//             asyncOp(x)
-//     });
-// }
+function doAsync(input) {
+    input.map(x => {
+        if(Array.isArray(x))
+            x.map(y => asyncOp(y))
+        else
+            asyncOp(x)
+    });
+}
 
-// let input = [
-//   'A',
-//   [ 'B', 'C', 'D', 'E' ],
-//   'F',
-//   'G',
-//   [ 'H', 'I' ]
-// ]
+let input = [
+  'A',
+  [ 'B', 'C', 'D', 'E' ],
+  'F',
+  'G',
+  [ 'H', 'I' ]
+]
 
-// doAsync(input);
+doAsync(input);
 
 
-// // /*
-// //  *
-// //  *  PROBLEM 2: STREAMS
-// //  *
-// //  */
+/*
+ *
+ *  PROBLEM 2: STREAMS
+ *
+ */
 
 
 var util = require('util'),
